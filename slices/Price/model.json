@@ -1,0 +1,230 @@
+{
+  "id": "price",
+  "type": "SharedSlice",
+  "name": "Price",
+  "description": "Price",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "first_year": {
+          "type": "StructuredText",
+          "config": {
+            "label": "First Year",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em"
+          }
+        },
+        "price": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Price",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em"
+          }
+        },
+        "point_1": {
+          "type": "Text",
+          "config": {
+            "label": "Point 1",
+            "placeholder": ""
+          }
+        },
+        "point_2": {
+          "type": "Text",
+          "config": {
+            "label": "Point 2",
+            "placeholder": ""
+          }
+        },
+        "point_3": {
+          "type": "Text",
+          "config": {
+            "label": "Point 3",
+            "placeholder": ""
+          }
+        },
+        "point_4": {
+          "type": "Text",
+          "config": {
+            "label": "Point 4",
+            "placeholder": ""
+          }
+        },
+        "point_5": {
+          "type": "Text",
+          "config": {
+            "label": "Point 5",
+            "placeholder": ""
+          }
+        },
+        "point_6": {
+          "type": "Text",
+          "config": {
+            "label": "Point 6",
+            "placeholder": ""
+          }
+        },
+        "point_7": {
+          "type": "Text",
+          "config": {
+            "label": "Point 7",
+            "placeholder": ""
+          }
+        },
+        "point_8": {
+          "type": "Text",
+          "config": {
+            "label": "Point 8",
+            "placeholder": ""
+          }
+        },
+        "point_9": {
+          "type": "Text",
+          "config": {
+            "label": "Point 9",
+            "placeholder": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "professtional",
+      "name": "Professtional",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "first_year": {
+          "type": "StructuredText",
+          "config": {
+            "label": "First Year",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em"
+          }
+        },
+        "price": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Price",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em"
+          }
+        },
+        "point_1": {
+          "type": "Text",
+          "config": {
+            "label": "Point 1",
+            "placeholder": ""
+          }
+        },
+        "point_2": {
+          "type": "Text",
+          "config": {
+            "label": "Point 2",
+            "placeholder": ""
+          }
+        },
+        "point_3": {
+          "type": "Text",
+          "config": {
+            "label": "Point 3",
+            "placeholder": ""
+          }
+        },
+        "point_4": {
+          "type": "Text",
+          "config": {
+            "label": "Point 4",
+            "placeholder": ""
+          }
+        },
+        "point_5": {
+          "type": "Text",
+          "config": {
+            "label": "Point 5",
+            "placeholder": ""
+          }
+        },
+        "point_6": {
+          "type": "Text",
+          "config": {
+            "label": "Point 6",
+            "placeholder": ""
+          }
+        },
+        "point_7": {
+          "type": "Text",
+          "config": {
+            "label": "Point 7",
+            "placeholder": ""
+          }
+        },
+        "point_8": {
+          "type": "Text",
+          "config": {
+            "label": "Point 8",
+            "placeholder": ""
+          }
+        },
+        "point_9": {
+          "type": "Text",
+          "config": {
+            "label": "Point 9",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

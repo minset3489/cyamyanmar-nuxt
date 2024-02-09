@@ -1,0 +1,28 @@
+{
+  "id": "title",
+  "type": "SharedSlice",
+  "name": "Title",
+  "description": "Title",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "sub_titles": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Sub Titles",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

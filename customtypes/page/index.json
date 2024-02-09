@@ -27,7 +27,25 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "rich_text": {
+            "price": {
+              "type": "SharedSlice"
+            },
+            "title": {
+              "type": "SharedSlice"
+            },
+            "call_to_action": {
+              "type": "SharedSlice"
+            },
+            "text_with_image": {
+              "type": "SharedSlice"
+            },
+            "testimonial": {
+              "type": "SharedSlice"
+            },
+            "features": {
+              "type": "SharedSlice"
+            },
+            "hero": {
               "type": "SharedSlice"
             }
           }
