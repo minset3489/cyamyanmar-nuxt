@@ -37,7 +37,7 @@ const packages = ref([
         :key="p.title ?? ''"
         class="grid sm:place-items-start rounded-md md:rounded-none place-items-center sm:text-left text-center border border-slate-400 mt-6 md:mt-0"
       >
-      <div class="bg-gradient-to-tr from-gray-500 to-cyan-200 text-center w-full p-4 " 
+      <div class="bg-gradient-to-tr from-gray-500 to-cyan-200 text-center w-full p-4 rounded-t-md md:rounded-t-none" 
         :class="{'!bg-gradient-to-tr !from-cyan-400 !to-emerald-400': p.title=== 'Professional' }"
         >
         <p class="heading heading--md !text-slate-600">{{ p.title }}</p>
@@ -49,7 +49,7 @@ const packages = ref([
             <span class="text-3xl md:text-5xl text-emerald-600 font-semibold">{{ p.price }}</span> 
             / Year</p>
       </div>
-      <div class="flex px-8 py-2 bg-white w-full" v-for = "service in p.services" :key="service">
+      <div class="flex px-8 py-2 bg-white w-full rounded-b-md md:rounded-b-none" v-for = "service in p.services" :key="service">
         <p><span class="text-green-500 text-2xl mr-2">●</span>{{ service }}</p>
       </div>
     </div>
