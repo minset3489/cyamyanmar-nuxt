@@ -1,78 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .button {
-    @apply block text-center rounded-full md:rounded-md bg-gradient-to-tr from-cyan-600 to-emerald-300 hover:bg-gradient-to-tr hover:from-cyan-600 hover:to-cyan-500 cursor-pointer transition-colors duration-200 ease-in-out py-3 px-12 font-display text-white font-bold text-base tracking-wider w-full md:w-fit;
-  }
-  
-  .heading {
-    @apply font-bold leading-tight tracking-tight font-display text-cyan-900;
-  }
-  
-  .heading--xl {
-    @apply text-5xl md:text-7xl;
-  }
-  
-  .heading--lg {
-    @apply text-4xl md:text-5xl;
-  }
-  
-  .heading--md {
-    @apply text-3xl md:text-4xl;
-  }
-  
-  .heading--sm {
-    @apply text-2xl md:text-3xl;
-  }
+  @apply block text-center rounded-full md:rounded-md bg-gradient-to-tr from-cyan-600 to-emerald-300 hover:bg-gradient-to-tr hover:from-cyan-600 hover:to-cyan-500 cursor-pointer transition-colors duration-200 ease-in-out py-3 px-12 font-display text-white font-bold text-base tracking-wider w-full md:w-fit;
+}
 
+.heading {
+  @apply font-bold leading-tight tracking-tight font-display text-cyan-900;
+}
 
-  /* Pirce */
-  .pricing-wrapper {
-    @apply grid gap-y-5;
-  }
-  
-  .pricing-container {
-    @apply flex flex-wrap gap-3 items-center justify-center;
-  }
-  
-  .pricing-container::before,
-  .pricing-container::after {
-    @apply inset-16;
-  }
-  
-  .pricing-card {
-    @apply p-3 border bg-gray-700 border-gray-700;
-  }
-  
-  .pricing-card.featured {
-    @apply relative border-4 border-solid border-blue-500;
-  }
-  
-  .pricing-card.featured::before {
-    @apply absolute top-0 transform -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-500 text-xs text-center uppercase rounded-full px-2;
-    content: "Most Popular";
-  }
-  
-  @media screen and (min-width: 1075px) {
-    .pricing-card.featured {
-      @apply transform scale-110 border-gray-700 p-5 md:p-6;
-    }
-  }
-  
-  .pricing-card-price {
-    @apply font-bold text-center text-lg;
-  }
-  
-  .pricing-card-pill {
-    @apply bg-gray-700 text-gray-900 uppercase text-xs text-center rounded-full px-2;
-  }
-  
-  .pricing-card-description {
-    @apply text-sm text-center;
-  }
-  
-  .pricing-card-feature-container {
-    @apply list-none text-sm grid gap-2 mb-2;
-  }
-  
-  .pricing-card-feature {
-    @apply flex gap-2;
-  }
-  
+.heading--xl {
+  @apply text-5xl md:text-7xl;
+}
+
+.heading--lg {
+  @apply text-4xl md:text-5xl;
+}
+
+.heading--md {
+  @apply text-3xl md:text-4xl;
+}
+
+.heading--sm {
+  @apply text-2xl md:text-3xl;
+}
