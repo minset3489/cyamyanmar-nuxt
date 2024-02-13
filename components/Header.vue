@@ -7,8 +7,8 @@ const settings = useSettings()
 <template>
     <div class="sticky top-0 left-0 right-0 z-50 bg-white bg-opacity-50">
     <Bounded as="header" class="!py-0 md:!py-4 ">
-        <div class="flex gap-4 items-center justify-between flex-col sm:flex-row ">
-            <CyaLogo/>
+        <div class="flex md:gap-4 items-center justify-between flex-col sm:flex-row ">
+            <CyaLogo class="w-[80px] md:w-[120px] h-[60px] md:h-[90px] p-0 m-0 "/>
             <nav class="flex place-items-center">
                 <ul class="flex text-center ">
                     <li v-for="item of settings?.data.navigation"

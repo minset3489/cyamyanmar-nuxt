@@ -35,7 +35,7 @@ const packages = ref([
     <div
         v-for="p of packages"
         :key="p.title ?? ''"
-        class="grid sm:place-items-start place-items-center sm:text-left text-center border border-slate-400 "
+        class="grid sm:place-items-start place-items-center sm:text-left text-center border border-slate-400 mt-6 md:mt-0"
       >
       <div class="bg-gradient-to-tr from-gray-500 to-cyan-200 text-center w-full p-4 " 
         :class="{'!bg-gradient-to-tr !from-cyan-400 !to-emerald-400': p.title=== 'Professional' }"
