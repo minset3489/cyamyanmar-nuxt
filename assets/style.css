@@ -1,5 +1,5 @@
 .button {
-    @apply block w-fit rounded-md bg-gradient-to-tr from-cyan-600 to-emerald-300 hover:bg-gradient-to-tr hover:from-cyan-600 hover:to-cyan-500 cursor-pointer transition-colors duration-200 ease-in-out py-3 px-12 font-display text-white font-bold text-base tracking-wider;
+    @apply block text-center rounded-full md:rounded-md bg-gradient-to-tr from-cyan-600 to-emerald-300 hover:bg-gradient-to-tr hover:from-cyan-600 hover:to-cyan-500 cursor-pointer transition-colors duration-200 ease-in-out py-3 px-12 font-display text-white font-bold text-base tracking-wider w-full md:w-fit;
   }
   
   .heading {

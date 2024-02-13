@@ -19,15 +19,15 @@ defineProps(
     :data-slice-variation="slice.variation"
   >
     <div
-      class="grid grid-cols-1 place-items-center"
+      class="grid grid-cols-1 place-items-center text-center"
       :class="{
         'md:grid-cols-2': slice.variation === 'horizontal'
       }"
     >
       <div
-        class="flex flex-col"
+        class="flex flex-col items-center text-left"
         :class="{
-          'items-center text-center': slice.variation === 'default'
+          'text-center': slice.variation === 'default'
         }"
       >
         <PrismicRichText
@@ -40,7 +40,7 @@ defineProps(
         />
         <NuxtLink
           :field="slice.primary.button_link"
-          class="button mb-8 md:mb-10"
+          class="button mb-8 md:mb-10 !w-full md:!max-w-fit text-center"
         >
           {{ slice.primary.button_text }}
         </NuxtLink>

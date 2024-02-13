@@ -14,14 +14,14 @@ const settings = useSettings()
                     <li v-for="item of settings?.data.navigation"
                     :key="item.label ?? ''"
                     >
-                        <PrismicLink :field="item.link" class="hover:bg-gradient-to-tr  hover:font-semibold hover:from-cyan-200  hover:to-emerald-300 rounded-lg py-3 px-3 mr-1 !text-[.9rem] md:!text-base transition-colors duration-200 ease-in-out ">
+                        <PrismicLink :field="item.link" class="hover:bg-gradient-to-tr hover:font-semibold hover:from-cyan-200 hover:to-emerald-300 rounded-lg py-3 px-3 mr-1 text-sm md:text-base transition-colors duration-200 ease-in-out">
                             {{ item.label }}
                         </PrismicLink>
                     </li>
                 </ul>
                 <NuxtLink
                     :field="settings?.data.button_link"
-                    class="button cursor-pointer text-center !text-xs md:!text-base !py-2 md:!py-2 !px-4 md:!px-6"
+                    class="button !w-fit cursor-pointer text-center !text-xs md:!text-base !py-2 md:!py-2 !px-4 md:!px-6"
                     >
                     {{ settings?.data.button_text }}
                 </NuxtLink>
