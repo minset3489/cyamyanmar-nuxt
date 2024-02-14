@@ -5,6 +5,7 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
 type PageDocumentDataSlicesSlice =
+  | GymCustomersSlice
   | PriceSlice
   | TitleSlice
   | CallToActionSlice
@@ -418,6 +419,76 @@ type FeaturesSliceVariation = FeaturesSliceDefault;
 export type FeaturesSlice = prismic.SharedSlice<
   "features",
   FeaturesSliceVariation
+>;
+
+/**
+ * Primary content in *GymCustomers → Primary*
+ */
+export interface GymCustomersSliceDefaultPrimary {
+  /**
+   * Heading field in *GymCustomers → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gym_customers.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.TitleField;
+}
+
+/**
+ * Primary content in *GymCustomers → Items*
+ */
+export interface GymCustomersSliceDefaultItem {
+  /**
+   * Image field in *GymCustomers → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gym_customers.items[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Name field in *GymCustomers → Items*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gym_customers.items[].name
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  name: prismic.TitleField;
+}
+
+/**
+ * Default variation for GymCustomers Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type GymCustomersSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<GymCustomersSliceDefaultPrimary>,
+  Simplify<GymCustomersSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *GymCustomers*
+ */
+type GymCustomersSliceVariation = GymCustomersSliceDefault;
+
+/**
+ * GymCustomers Shared Slice
+ *
+ * - **API ID**: `gym_customers`
+ * - **Description**: GymCustomers
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type GymCustomersSlice = prismic.SharedSlice<
+  "gym_customers",
+  GymCustomersSliceVariation
 >;
 
 /**
@@ -1220,6 +1291,11 @@ declare module "@prismicio/client" {
       FeaturesSliceDefaultItem,
       FeaturesSliceVariation,
       FeaturesSliceDefault,
+      GymCustomersSlice,
+      GymCustomersSliceDefaultPrimary,
+      GymCustomersSliceDefaultItem,
+      GymCustomersSliceVariation,
+      GymCustomersSliceDefault,
       HeroSlice,
       HeroSliceDefaultPrimary,
       HeroSliceHorizontalPrimary,

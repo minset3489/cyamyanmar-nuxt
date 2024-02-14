@@ -27,6 +27,9 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "gym_customers": {
+              "type": "SharedSlice"
+            },
             "price": {
               "type": "SharedSlice"
             },

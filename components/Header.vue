@@ -8,7 +8,7 @@ const settings = useSettings()
     <div class="sticky top-0 left-0 right-0 z-50 bg-white bg-opacity-50">
     <Bounded as="header" class="!py-0 md:!py-4 ">
         <div class="flex md:gap-4 items-center justify-between flex-col sm:flex-row ">
-            <CyaLogo class="w-[80px] md:w-[120px] h-[60px] md:h-[90px] p-0 m-0 "/>
+            <NuxtLink to="/"><CyaLogo class="w-[80px] md:w-[120px] h-[60px] md:h-[90px] p-0 m-0 "/></NuxtLink>
             <nav class="flex place-items-center">
                 <ul class="flex">
                     <li v-for="item of settings?.data.navigation"

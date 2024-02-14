@@ -8,6 +8,7 @@ export const components = defineSliceZoneComponents({
     () => import("./CallToAction/index.vue"),
   ),
   features: defineAsyncComponent(() => import("./Features/index.vue")),
+  gym_customers: defineAsyncComponent(() => import("./GymCustomers/index.vue")),
   hero: defineAsyncComponent(() => import("./Hero/index.vue")),
   price: defineAsyncComponent(() => import("./Price/index.vue")),
   rich_text: defineAsyncComponent(() => import("./RichText/index.vue")),
