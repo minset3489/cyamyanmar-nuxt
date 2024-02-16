@@ -27,7 +27,12 @@ defineProps(
         class="mx-auto text-center"
       >
       <PrismicImage class="rounded-md drop-shadow-lg" :field="item.image" />
-      <div class=" mx-auto heading heading--sm m-4">{{item.name}}</div>
+      <PrismicText
+          wrapper="h3"
+          :field="item.name"
+          class="mx-auto heading heading--sm m-4"
+        />
+      <!-- <div class=" mx-auto heading heading--sm m-4">{{item.name}}</div> -->
     </div>
   </div>
 
